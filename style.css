@@ -1,0 +1,601 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(images/cursor.png) 85 50,auto;
+    
+}
+ 
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(142deg, rgba(255,255,255,1) 25%, rgba(0,134,255,1) 100%);
+    cursor: url(images/cursor.png)85 50,auto;
+}
+html,body{
+    scroll-behavior: smooth;
+    font-family: "Archivo Black", serif;
+}
+
+nav{    
+    text-align: center;
+    font-size:25px;
+    position: fixed;
+    margin-left: 35%;
+}
+
+.navbar{
+    background-color: black;
+    padding: 0.4rem;
+    border-radius: 2rem;
+    color: white;
+    text-decoration: none;
+    width:fit-content;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;     
+    font-size: 400%;
+     text-align:left;
+     padding: 4rem;
+}
+
+#name{
+    text-align: center;
+    height: 50%;
+    /* background-color:rgb(152, 232, 248); */
+    background: rgb(255,255,255);
+    background: linear-gradient(142deg, rgba(255,255,255,1) 25%, rgba(0,134,255,1) 100%);
+    padding: 1%;
+}
+
+#about{
+    display: flex;
+    justify-content  : center;
+    /* background-color:rgb(152, 232, 248); */
+    background: rgb(255,255,255);
+    background: linear-gradient(142deg, rgba(255,255,255,1) 25%, rgba(0,134,255,1) 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:4rem;
+    text-align: left;
+    font-size: 120%;
+    align-items: center;
+    gap: 150px;;
+    width: 100%;
+}
+
+#about h2{
+    padding:2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 250%;
+    }
+
+#about p{
+    line-height:normal;
+    font-size: 130%;
+}
+
+#about #gap{
+    width: 20%;
+}
+
+#about img{
+    height:25rem;
+    border-radius: 4%;
+    border: 1px solid #ccc;
+    background-color:rgb(217, 169, 241);
+    width:25rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+img:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+#exhead{
+    display: flex;
+    justify-content: center;
+    font-size: 170%;
+    text-align: left;
+    padding-left: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1rem;
+}
+#exhead h2{
+    text-align: left;
+    width: 100%;
+}
+#ho_jaaaa{
+    display: flex;
+    justify-content: center;
+}
+
+#exp{
+    display: flex;
+    width: 100%;
+    justify-content  : center;
+    background: rgb(255,255,255);
+    background: linear-gradient(142deg, rgba(255,255,255,1) 25%, rgba(0,134,255,1) 100%);
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+    flex-direction: column;
+}
+
+.expcolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:1%;
+    gap: 1rem;
+}
+
+.expert{
+    background: rgb(255,255,255);
+    background: linear-gradient(142deg, rgba(255,255,255,1) 25%, rgba(0,134,255,1) 100%);
+    border-radius:25px;
+    padding: 1rem;
+    justify-content:center ;
+    text-align: center;
+}
+
+.expert:hover{
+    background-color:darkgray;
+    font-size: 29px; 
+    font-weight:600;
+    border-radius: 25px;
+}
+
+#exp p{
+    font-size:1.7rem;
+    text-align: left;
+    padding-top: 4rem;
+    padding: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#project{
+    background: rgb(255,255,255);
+    background: linear-gradient(142deg, rgba(255,255,255,1) 25%, rgba(0,134,255,1) 100%);
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#project h2{
+    font-size: 250%;
+    text-align: left;
+    padding-left: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1rem;
+}
+
+.prg{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 4rem;
+    border-radius:3rem;
+    box-shadow:0px 10px 20px rgba(0, 0, 0, 0.4) ;
+    background-color:rgb(123, 224, 255);
+}
+
+.prg img{
+    width: 20rem;
+    height:20rem;
+    border-radius: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.prg p{
+    font-size:170%;
+    text-align: left;
+    padding-top: 4rem;
+    padding: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#myself{
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 25%, rgba(0,134,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 4rem ;
+    flex-direction: column;
+}
+
+#me {
+    font-size: 250%;
+    text-align: left;
+    padding-left: 4rem;
+    padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: auto;
+}
+
+#me::-webkit-scrollbar {
+    height: 8px; /* Adjust scrollbar height */
+  }
+
+#team{
+    display: flex;
+    flex-direction: row;
+    border-radius: 4rem;
+    padding: 4rem;
+    margin: 1rem;
+    background-color: rgb(233, 242, 250);
+    border-radius: 2rem;
+    flex:0 0 auto;
+}
+
+#team p{
+    font-size:170%;
+    text-align: left;
+    padding: 4rem;
+    padding-left: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#team img{
+    width: 250px;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+#creativity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 4rem;
+    padding: 4rem;
+    margin: 1rem;
+    background-color: rgb(145, 250, 250) ;
+    border-radius: 2rem; 
+}
+
+#creativity p{
+    font-size:170%;
+    text-align: left;
+    padding: 4rem;
+    padding-left: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#creativity img{
+    width: 300px;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+#poetry{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 4rem;
+    padding: 4rem;
+    margin: 1rem;
+    background-color: rgb(35, 172, 252) ;
+    border-radius: 2rem;
+}
+
+#poetry p{
+    font-size:170%;
+    text-align: left;
+    padding: 4rem;
+    padding-left: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#poetry img{
+    width: 300px;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+#art{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 4rem;
+    padding: 4rem;
+    margin: 1rem;
+    background-color: rgb(18, 135, 252) ;
+    border-radius: 2rem;
+}
+
+#art p{
+    font-size:170%;
+    text-align: left;
+    padding: 4rem;
+    padding-left: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#art img{
+    width: 300px;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background-color: darkcyan;
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#contact h2{
+    display: flex;
+    justify-content: left;
+    background-color: black;
+    border-radius: 2rem;
+    color: white;
+    padding:0.7rem;
+    width: fit-content;
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+    top: 2rem;
+}
+
+#con h3{
+    background-color: black;
+    border-radius: 2rem;
+    color: white;
+    padding:0.8rem;
+    width: fit-content;
+    justify-content: center;
+    font-size: 150%;
+}
+
+#contact h3:hover{
+    text-decoration: underline;
+    transition: o.3;
+}
+
+#con p{
+    font-size:40px;
+}
+
+#con a{
+    text-decoration: none;
+}
+
+#con{
+    display: flex;
+    justify-content: left;
+    gap: 60px;
+}
+
+.co{
+    object-fit: cover;
+    height: 100vh;
+}
+
+
+@media (max-width: 768px) {
+        
+    nav {
+      font-size: 10px; 
+    }
+  
+    .navbar {
+      padding: 0.4rem;
+      width: 90%; 
+    }
+  
+    h1 {
+      font-size: 250%; 
+      padding: 1rem;
+    }
+  
+    #about {
+        display: flex;
+        flex-direction: column;
+      gap: 10px;
+      padding: 2rem;
+    }
+  
+    #about img {
+      height: 12rem;
+      width: 10rem; 
+    }
+
+    #about p{
+        font-size: 12px;
+    }
+
+    #left h2{
+        font-size: 150%;
+    }
+
+    #exhead h2{
+        font-size: 25px;
+        text-align: left;
+        padding: none;
+
+    }
+  
+    #exp p {
+      font-size: 12px;
+      padding: 1rem;
+    }
+
+    #exp{
+       padding: 0.5rem;
+    }
+    
+    .expert {
+       padding: 0.3rem;
+       font-size: 0.6rem;
+       justify-content: left;
+    }
+
+    .expert:hover{
+        background-color:darkgray;
+        font-size: 10x; /* Font size */
+        font-weight: 600px;
+        border-radius: 25px;
+    }
+
+    #ho_jaaaa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .expcolumn{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    #project{
+        /* width: min-content; */
+        height: min-content;
+    }
+
+    .prg{
+        padding: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .prg img{
+        display: flex;
+        justify-content: center;
+        width: 11rem;
+        height: 11rem;
+        object-fit: cover;
+    }
+
+    .prg p{
+        padding: 0%;
+    }
+
+    #project h2{
+        font-size: 25px;
+    }
+
+    #me{
+        padding:0;
+    }
+
+    #myself{
+       padding:3rem;
+    }
+
+    #team{
+        height: min-content;
+        width:99%;
+        gap: 0.5rem;
+    
+    }
+
+#team p{
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+#creativity{
+    height: min-content;
+    width:99%;
+    gap: 1rem;
+}
+
+#creativity p{
+    padding: 0%;
+}
+
+#poetry{
+    height: min-content;
+    width:99%;
+    display: flex;
+    flex-direction:column-reverse ;
+    gap: 1rem;
+}
+
+#poetry p{
+    padding: 0%;
+}
+
+#art{
+    height: min-content;
+    width:99%;
+    gap: 1rem;
+}
+
+#art p{
+    padding: 0%;
+}
+
+    #me{
+    font-size: 25px;
+    }
+
+    .prg{
+    flex-direction: column;
+    }
+
+    .prg p{
+    font-size: 12px;
+    }
+
+    #team, #creativity, #poetry, #art {
+        display: flex;
+        align-items: center;
+      flex-direction: column; 
+      justify-content: center;
+    }
+
+    #team, #creativity, #poetry, #art {
+        flex-direction: column; 
+        padding: 2rem;
+        font-size: 7px;
+    }
+
+    #team img{
+        width: 10rem;
+        height:10rem;
+    } 
+  
+    #creativity img{
+        width: 10rem;
+        height:10rem;
+    } 
+
+    #poetry img{
+        width: 10rem;
+        height:10rem;
+    } 
+
+    #art img{
+        width: 10rem;
+        height:10rem;
+    } 
+
+    #con {
+    flex-direction: column; 
+    gap: 0.1rem;;
+    height: min-content;
+}
+  
+    #contact h2 {
+      font-size: 15px;
+    }
+  
+    #contact h3 {
+      font-size: 12px;
+    }
+  
+    #con p {
+      font-size: 12px;
+    }
+}
+  
